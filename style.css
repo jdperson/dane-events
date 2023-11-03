@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  background-color: rgb(25,25,30);
+  color: rgb(201, 201, 201);
+}
+
+header img {
+  margin-right: auto;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin: 10px 20px;
+}
+
+#your-event {
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: rgb(65, 132, 203);
+  color: white;
+}
