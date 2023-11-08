@@ -1,9 +1,31 @@
+/* 
+---------- Fonts ---------- 
+
+BIG BOY
+font-family: 'Cinzel Decorative', serif;
+
+LIL BOY
+font-family: 'Cormorant SC', serif;
+
+>h3
+font-family: 'Libre Baskerville', serif;
+
+p
+font-family: 'Quattrocento', serif;
+
+*/
+
 body {
   margin: 0;
   padding: 0;
   font-size: 18px;
   line-height: 1.5;
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(200, 200, 200);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -11,11 +33,11 @@ ul {
 }
 
 header {
+  font-family: 'Quattrocento', serif;
   display: flex;
   position: fixed;
   width: 100%;
   background-color: rgb(25,25,30);
-  color: rgb(201, 201, 201);
   z-index: 100;
 }
 
@@ -36,13 +58,34 @@ header nav ul li {
   font-size: 24px;
 }
 
+header nav ul li:hover {
+  color: rgb(225, 110, 50);
+  transition: 0.3s;
+}
+
+#gallery {
+  color: rgb(200, 200, 200);
+}
+
+#gallery:hover {
+  color: rgb(225, 110, 50);
+  transition: 0.3s;
+}
+
 #your-event {
-  border: none;
-  border-radius: 7px;
-  padding: 11px 15px;
-  background-color: rgb(65, 132, 203);
-  color: white;
-  font-size: 18px;
+  color: rgb(200, 200, 200);
+  background-color: rgb(60, 60, 70);
+  padding: 7px 11px;
+  border: 3px solid rgb(80, 80, 80);
+  border-radius: 5px;
+}
+
+#your-event:hover {
+  color: rgb(225, 110, 50);
+  background-color: rgb(45, 45, 55);
+  border-color: rgba(175, 90, 50, 0.75);
+
+  transition: 0.3s;
 }
 
 #hero {
@@ -61,12 +104,14 @@ header nav ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 h1, h2 {
   color: white;
   text-align: center;
   margin: 25px 0;
+  white-space: nowrap;
 }
 
 #mid-plane {
@@ -78,10 +123,12 @@ h1, h2 {
 
 h1 {
   font-size: 8vw;
+  font-family: 'Cinzel Decorative', serif;
 }
 
 h2 {
   font-size: 4vw;
+  font-family: 'Cormorant SC', serif;
 }
 
 #social-btns {
@@ -108,6 +155,7 @@ main {
 h3 {
   text-align: center;
   font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .services {
@@ -124,6 +172,7 @@ h3 {
 .services h4 {
   font-size: 24px;
   padding-bottom: 11px;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .services h4,
@@ -138,6 +187,7 @@ h3 {
 footer {
   background-color: rgb(25, 25, 30);
   color: rgb(201, 201, 201);
+  font-family: 'Quattrocento', serif;
   display: flex;
   justify-content: space-evenly;
   line-height: 2;
