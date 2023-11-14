@@ -91,7 +91,7 @@ header nav ul li:hover {
 #hero {
   position: relative;
   padding-top: 99px;
-  background-image: url('./assets/images/dane_hero.jpg');
+  background-image: url('../assets/images/dane_hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;

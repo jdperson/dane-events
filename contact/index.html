@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/dane_events_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact | Dane Events</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="../assets/images/dane_events_logo.png" alt="DE Logo"/>
+
+      <nav>
+        <ul>
+          <li id="gallery"><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form action="#" method="post">
+        <h1>Let's Get the Party Started!</h1>
+
+        <input type="text" id="name" name="name" placeholder="Name" required>
+    
+        <input type="email" id="email" name="email" placeholder="Email" required>
+    
+        <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+    
+        <select id="eventType" name="eventType" title="eventType" placeholder="Select Event Type" required>
+          <option value="" disabled selected>Select Event Type</option>
+          <option value="wedding">Wedding</option>
+          <option value="quin">Quinceañera</option>
+          <option value="party">Party</option>
+          <option value="conference">Conference</option>
+        </select>
+        
+        <div id="inner-stack">
+          <div id="row1">
+            <div>
+              <label for="date">Date of Event</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+
+            <div>
+              <label for="time">Time of Event</label>
+              <select id="time" name="time" required>
+                <option value="" disabled selected>Select Time</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+              </select>
+            </div>
+          </div>
+          
+          <div id="row2">
+            <div id="guest-wrapper">
+              <label for="guestCount">Guest Count</label>
+              <input type="number" id="guestCount" name="guestCount" placeholder="100" required>
+            </div>
+
+            <div id="budget-wrapper">
+              <label for="budget">Budget $</label>
+              <input type="text" id="budgetMin" name="budgetMin" placeholder="Min" required>
+              -
+              <input type="text" id="budgetMax" name="budgetMax" placeholder="Max" required>
+            </div>
+          </div>
+        </div>
+
+        <div id="message">
+          <label for="additionalInfo">Message:</label>
+          <textarea id="additionalInfo" name="additionalInfo" placeholder="Any additional information we may need..."></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <div id="hours">
+        <h5>Hours</h5>
+        <ul>
+          <li>Mon - Fri 8:00 am - 5:00 pm</li>
+          <li>Saturday by Appointment</li>
+          <li>Sunday closed</li>
+        </ul>
+      </div>
+      
+      <div id="contact-us">
+        <h5>Contact Us</h5>
+        <ul>
+          <li>Phone: (501) 999-9999</li>
+          <li>Email: example@gmail.com</li>
+          <li>Fax: (501) 999-9999</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
