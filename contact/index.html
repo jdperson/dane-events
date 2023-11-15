@@ -10,7 +10,7 @@
 
   <body>
     <header>
-      <img src="../assets/images/dane_events_logo.png" alt="DE Logo"/>
+      <a href="../home/index.html"><img src="../assets/images/dane_events_logo.png" alt="DE Logo"/></a>
 
       <nav>
         <ul>
@@ -38,7 +38,7 @@
         </select>
         
         <div id="inner-stack">
-          <div id="row1">
+          <div class="row">
             <div>
               <label for="date">Date of Event</label>
               <input type="date" id="date" name="date" required>
@@ -55,7 +55,7 @@
             </div>
           </div>
           
-          <div id="row2">
+          <div class="row">
             <div id="guest-wrapper">
               <label for="guestCount">Guest Count</label>
               <input type="number" id="guestCount" name="guestCount" placeholder="100" required>
@@ -75,7 +75,7 @@
           <textarea id="additionalInfo" name="additionalInfo" placeholder="Any additional information we may need..."></textarea>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
       </form>
     </main>
 
